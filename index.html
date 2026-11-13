@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- HEADER -->
+    <header class="topbar">
+        <h2>Royal Dashboard</h2>
+
+       <input type="search" id="searchInput" placeholder="Cari Kelas, Dokumen, Aktifitas dll...">
+    </header>
+
+    <div class="layout">
+
+        <!-- SIDEBAR KIRI -->
+        <aside class="sidebar">
+            <nav>
+                <a href="#" class="nav-link active" data-menu="home">Home</a>
+                <a href="#" class="nav-link" data-menu="mahasiswa">Mahasiswa</a>
+                <a href="#" class="nav-link" data-menu="kelas">Kelas</a>
+                <a href="#" class="nav-link" data-menu="aktivitas">Aktifitas</a>
+                <a href="#" class="nav-link" data-menu="statistik">Statistik</a>
+                <a href="#" class="nav-link" data-menu="dokumen">Dokumen</a>
+                <a href="#" class="nav-link" data-menu="settings">Settings</a>
+                <a href="#" class="nav-link sign-out" data-menu="signout">Sign Out</a>
+            </nav>
+        </aside>
+
+        <!-- KONTEN UTAMA -->
+        <main class="main-content">
+
+            <!-- SELAMAT DATANG -->
+            <section class="welcome-card">
+                <div>
+                    <h1 id="welcomeTitle">Selamat Datang, Nama Mahasiswa</h1>
+
+                    <h2 id="welcomeClass">Kelas SI-3X</h2>
+
+                    <p>
+                        Kamu memiliki Statistik, 4 Progres Kelas,
+                        4 Aktifitas Selanjutnya dan 3 Lampiran
+                        Dokumen yang ada pada aplikasi ini.
+                    </p>
+                </div>
+
+                <div class="avatar">
+                    <img src="angelstr.jpeg">
+                    
+                </div>
+            </section>
+
+            <div class="content-grid">
+
+                <!-- STATISTIK -->
+                <section class="panel statistics" id="statisticsPanel">
+                    <h3>Statistik Mahasiswa</h3>
+
+                    <div class="chart">
+                        <div class="y-labels">
+                            <span>60%</span>
+                            <span>50%</span>
+                            <span>40%</span>
+                            <span>30%</span>
+                            <span>20%</span>
+                            <span>10%</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="grid-lines">
+                                <i></i><i></i><i></i>
+                                <i></i><i></i><i></i>
+                            </div>
+
+                            <div class="bars">
+                                <div class="bar-wrap">
+                                    <div class="bar" style="height:52%"></div>
+                                    <small>Class A</small>
+                                </div>
+
+                                <div class="bar-wrap">
+                                    <div class="bar" style="height:39%"></div>
+                                    <small>Class B</small>
+                                </div>
+
+                                <div class="bar-wrap">
+                                    <div class="bar" style="height:72%"></div>
+                                    <small>Class C</small>
+                                </div>
+
+                                <div class="bar-wrap">
+                                    <div class="bar" style="height:48%"></div>
+                                    <small>Class D</small>
+                                </div>
+
+                                <div class="bar-wrap">
+                                    <div class="bar" style="height:88%"></div>
+                                    <small>Class E</small>
+                                </div>
+                            </div>
+
+                            <svg class="chart-line" viewBox="0 0 400 180" preserveAspectRatio="none">
+                                <polyline points="18,125 95,90 170,112 245,66 322,80 385,38"
+                                fill="none" stroke="#00a6b5" stroke-width="3"/>
+                                <circle cx="245" cy="66" r="5" fill="#00a6b5"/>
+                            </svg>
+
+                            <div class="avg">
+                                Avg<br><b>Point</b>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROGRES KELAS -->
+                <section class="panel progress-panel" id="progressPanel">
+                    <h3>Progres Kelas</h3>
+
+                    <div class="info-card">
+                        <b>Matakuliah A</b>
+                        <span>78 Pendaftar</span>
+                    </div>
+
+                    <div class="info-card">
+                        <b>Matakuliah B</b>
+                        <span>30 Pendaftar</span>
+                    </div>
+
+                    <div class="info-card">
+                        <b>Matakuliah C</b>
+                        <span>40 Pendaftar</span>
+                    </div>
+
+                    <div class="info-card">
+                        <b>Matakuliah D</b>
+                        <span>10 Pendaftar</span>
+                    </div>
+                </section>
+
+                <!-- AKTIVITAS -->
+                <section class="panel activities-panel" id="activitiesPanel">
+                    <h3>Aktifitas Selanjutnya</h3>
+
+                    <div class="activity-card">
+                        <b>Perkuliahan Daring 1</b>
+                        <span>Senin, 15 Januari 2025</span>
+                    </div>
+
+                    <div class="activity-card">
+                        <b>Perkuliahan Daring 1</b>
+                        <span>Selasa, 15 Februari 2025</span>
+                    </div>
+
+                    <div class="activity-card">
+                        <b>Perkuliahan Daring 1</b>
+                        <span>Rabu, 15 Maret 2025</span>
+                    </div>
+
+                    <div class="activity-card">
+                        <b>Perkuliahan Daring 1</b>
+                        <span>Kamis, 15 April 2025</span>
+                    </div>
+                </section>
+
+                <!-- LAMPIRAN DOKUMEN -->
+                <section class="panel attachments-panel" id="attachmentsPanel">
+                    <h3>Lampiran<br>Dokumen</h3>
+
+                    <div class="document-row">
+                        <span>
+                            <b>Lampiran Dokumen 1</b> -
+                            Matakuliah A | Tugas Bersama Perkuliahan Daring
+                        </span>
+                        <a href="#">Lihat Dokumen</a>
+                    </div>
+
+                    <div class="document-row">
+                        <span>
+                            <b>Lampiran Dokumen 2</b> -
+                            Matakuliah B | Tugas Bersama Perkuliahan Daring
+                        </span>
+                        <a href="#">Lihat Dokumen</a>
+                    </div>
+
+                    <div class="document-row">
+                        <span>
+                            <b>Lampiran Dokumen 3</b> -
+                            Matakuliah C | Tugas Bersama Perkuliahan Daring
+                        </span>
+                        <a href="#">Lihat Dokumen</a>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
